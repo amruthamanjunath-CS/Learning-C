@@ -10,3 +10,4 @@ This folder contains programs implemented in C using functions and recursion.
 
 ## Function Programs
 1. **Natural Number to Roman Numeral Conversion** – Converts a given natural number to its Roman numeral equivalent using functions.
+2. **variadic function sum** - Takes as many aruguments as user gives and performs the operation.
