@@ -7,5 +7,6 @@ This folder contains introductory C programs written to understand fundamental p
 - Conditional statements for number classification
 - Menu-driven programs using loops
 - Switch and if-else
+- To find the roots of a quadratic equation
 
 These programs focus on clarity and logical correctness and serve as a foundation for more advanced topics.
