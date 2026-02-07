@@ -22,12 +22,7 @@ Binary search is implemented to efficiently locate an element in a sorted array.
 ### Bubble Sort
 Bubble sort is used to sort array elements in ascending order. Although simple, this algorithm helps in understanding basic sorting logic and iterative comparisons.
 
-## Purpose of This Folder
-
-The aim of these programs is to:
-- Build a strong foundation in array manipulation
-- Improve familiarity with loops and conditional statements
-- Practice commonly asked problems in academics and interviews
-- Develop structured and readable C programs
+## To merge two arrays after sorting them in ascending order
+Sorts two user-input arrays using bubble sort and merges them into a single sorted array. Handles leftover elements automatically.
 
 Each program in this folder focuses on one concept and is written for clarity and learning rather than optimization.
