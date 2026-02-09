@@ -25,4 +25,7 @@ Bubble sort is used to sort array elements in ascending order. Although simple, 
 ## To merge two arrays after sorting them in ascending order
 Sorts two user-input arrays using bubble sort and merges them into a single sorted array. Handles leftover elements automatically.
 
+## To find second maximum number
+To take an array as an input from user and to print the second largest number among them using basics like loops and conditional statements.
+
 Each program in this folder focuses on one concept and is written for clarity and learning rather than optimization.
