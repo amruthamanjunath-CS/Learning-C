@@ -13,10 +13,10 @@ void update();
 void show();
 int main(){
     int choice;
-    printf("good morning! How can we help you?\n");
+    printf("Good morning! How can we help you?\n");
     while(1){
-    printf(" 1.add\n 2.search\n 3.update\n 4.show all \n 5.exit\n");
-    printf("enter your choice\n");
+    printf(" \n 1.Add\n 2.Search\n 3.Update\n 4.Show all \n 5.Exit\n");
+    printf("Enter your choice\n");
     scanf("%d",&choice);
     switch(choice){
         case 1: add();
@@ -27,10 +27,10 @@ int main(){
         break;
         case 4:show();
         break;
-        case 5:printf("thank you\n exiting....\n");
+        case 5:printf("Thank you\n Exiting....\n");
         exit(0);
         break;
-        default:printf("invalid choice please choose a valid one\n");
+        default:printf("Invalid choice please choose a valid one\n");
     }
 }
 return 0;
@@ -46,40 +46,41 @@ scanf(" %[^\n]", s[count].name);
 printf("Enter marks: ");
 scanf("%f", &s[count].marks);
 
+printf("Details added\n");
     count++;
 }
 void search(){
     int roll_number;
     int found=0;
-    printf("enter the roll number to search\n");
+    printf("Enter the roll number to search\n");
     scanf("%d",&roll_number);
     for(int i=0;i<count;i++){
         if (s[i].roll==roll_number){
-            printf("student found\n");
-            printf("roll number:%d\n name:%s\n marks:%.2f\n",s[i].roll,s[i].name,s[i].marks);
+            printf("Student found,the details are:\n");
+            printf(" Roll number:%d\n Name:%s\n Marks:%.2f\n",s[i].roll,s[i].name,s[i].marks);
             found=1;
             break;
         }
     }
     if(found!=1)
-    printf("student not found\n");
+    printf("Student not found:check again\n");
 }
 void update(){
     int choice;
     int roll_number;
-    printf("enter the roll number\n");
+    printf("Enter the roll number\n");
     scanf("%d",&roll_number);
-    printf("what you need to update\n 1.name\n 2.marks\n");
+    printf("What you need to update\n 1.Name\n 2.Marks\n");
     scanf("%d",&choice);
     if(choice==1){
     for(int i=0;i<count;i++){
         if(s[i].roll==roll_number){
             char new_name[100];
             while(getchar() != '\n');  
-            printf("enter the name to update:\n");
+            printf("Enter the name to update:\n");
             scanf("%[^\n]",new_name);
             strcpy(s[i].name, new_name);
-            printf("updated\n");
+            printf("Name updated\n");
             break;
         }
         }
@@ -88,18 +89,18 @@ void update(){
     for(int i=0;i<count;i++){
         if(s[i].roll==roll_number){
             int marks;
-            printf("enter the new marks\n");
+            printf("Enter the new marks\n");
             scanf("%d",&marks);
             s[i].marks=marks;
-            printf("updated");
+            printf("Marks updated\n");
         }
         break;
     }
 }
 void show(){
-    printf("student details:\n");
+    printf("Student details:\n");
     for(int i=0;i<count;i++){
-        printf("student %d details\n 1.roll:%d\n 2.name:%s\n 3.marks:%.2f\n",i+1,s[i].roll,s[i].name,s[i].marks);
+        printf("Student %d details\n 1.Roll:%d\n 2.Name:%s\n 3.Marks:%.2f\n",i+1,s[i].roll,s[i].name,s[i].marks);
     }
     
 }
