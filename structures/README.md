@@ -5,3 +5,7 @@ This folder contains programs to practice using structures in C.
    - Stores and displays data for 4 patients using an array of structures.  
    - Users can enter patient details, and the program will display all the stored data.  
    - This was a beginner project to understand how structures work in C.
+
+2. **Library:Book information collecter**
+   - Stores and Displays information of books entered by the user.
+   
