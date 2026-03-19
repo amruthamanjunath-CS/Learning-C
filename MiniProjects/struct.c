@@ -93,8 +93,8 @@ void update(){
             scanf("%d",&marks);
             s[i].marks=marks;
             printf("Marks updated\n");
+            break;
         }
-        break;
     }
 }
 void show(){
